@@ -14,27 +14,38 @@ body {
 .header {
   background-color: #075e54;
   color: #fff;
-  padding: 10px;
-  text-align: center;
+  padding: 40px;
+  position: relative; /* I've added position relative to put the h under the box */
+}
+
+.wsa-main-container {
+  display: flex;
 }
 
 .main-container {
   display: flex;
-  background-color: #dbdad2; /* changed background*/
-  padding: 200px;
+  background-color: rgba(219, 218, 210, 0.9);  
+  justify-content: center;
+  position: absolute;
+  top: 50px; /*add position absolute to put the main container on the top of the header*/
+  left: 50px; 
+  right: 50px;
+  bottom: auto;
 }
 
 .sidebar {
-  background-color: #0ba8eb;
+ 
   color: #fff;
-  padding: 10px;
+  padding: 1px;
   margin: auto 0;
-  /*elim the witdh */
+  display: flex;
 }
+
+
 
 /*add more sidebar*/
 .sidebar-1 {
-  background-color: #7dc77d; /* Verde */
+  background-color: #7dc77d; /* green */
 }
 
 .sidebar-2 {
@@ -42,16 +53,14 @@ body {
 }
 
 .sidebar-3 {
-  background-color: #da6a6a; /* Rosso */
+  background-color: #da6a6a; /* Red */
 }
 
+/* wsa-avatar out-side of sidebar */
 .wsa-avatar {
-  width: 25%;
   background-color: #7009dd;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  border: 2px dashed black;
+  padding: 90px;
+  color: white;
 }
 
 .wsa-container {
@@ -63,19 +72,18 @@ body {
 .wsa-header {
   background-color: #5e0747;
   color: #fff;
-  padding: 10px;
-  flex-grow: 1;
+  
+  
 }
 
 .wsa-main {
   background-color: #6fdc41;
   padding: 10px;
-  flex-grow: 2;
+  flex-grow: 3;
+  color: #fff;
 }
 
 .wsa-footer {
   background-color: #e8d01d;
   color: #fff;
-  padding: 1px;
-  flex-grow: 1;
-}
+ 
