@@ -20,7 +20,7 @@ body {
 
 .main-container {
   display: flex;
-  background-color: #dbdad2; /* Cambiato il colore di sfondo */
+  background-color: #dbdad2; /* changed background*/
   padding: 200px;
 }
 
@@ -29,6 +29,19 @@ body {
   color: #fff;
   padding: 20px;
   width: 25%;
+}
+
+/*add more sidebar*/
+.sidebar-1 {
+  background-color: #7dc77d; /* Verde */
+}
+
+.sidebar-2 {
+  background-color: #6381c5; /* Blu */
+}
+
+.sidebar-3 {
+  background-color: #da6a6a; /* Rosso */
 }
 
 .wsa-avatar {
@@ -62,6 +75,6 @@ body {
 .wsa-footer {
   background-color: #e8d01d;
   color: #fff;
-  padding: 10px;
+  padding: 1px;
   flex-grow: 1;
 }
