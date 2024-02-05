@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #128c7e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  background-color: #dbdad2;
+}
+
+.sidebar {
+  background-color: #075e54;
+  color: #fff;
+  padding: 20px;
+  width: 25%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+}
