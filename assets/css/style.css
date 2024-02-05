@@ -20,12 +20,12 @@ body {
 
 .main-container {
   display: flex;
-  background-color: #dc4e41; /* Cambiato il colore di sfondo */
+  background-color: #dbdad2; /* Cambiato il colore di sfondo */
   padding: 200px;
 }
 
 .sidebar {
-  background-color: #dbdad2;
+  background-color: #0ba8eb;
   color: #fff;
   padding: 20px;
   width: 25%;
@@ -33,7 +33,7 @@ body {
 
 .wsa-avatar {
   width: 25%;
-  background-color: #ccc;
+  background-color: #7009dd;
   padding: 10px;
   box-sizing: border-box;
   margin-top: 10px;
@@ -55,12 +55,12 @@ body {
 
 .wsa-main {
   background-color: #6fdc41;
-  padding: 10px; /* Corretto il valore della proprietà padding */
+  padding: 10px;
   flex-grow: 2;
 }
 
 .wsa-footer {
-  background-color: #dbdad2;
+  background-color: #e8d01d;
   color: #fff;
   padding: 10px;
   flex-grow: 1;
