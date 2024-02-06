@@ -5,72 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <title>Boolzapp</title>
   </head>
-
   <body>
-    <!---container back-->
-    <div class="backgrd-container">
-      <!-- Header -->
-      <div class="header">
-        <h1></h1>
-      </div>
-
-      <!-- main container -->
-      <div class="main-container">
-        <!-- Sidebar 1 -->
-        <div class="left">
-          <div class="sidebar-container">
-          <div class="sidebar sidebar-1">
-              <p>Sidebar 1 Content</p>
+    <main>
+      <div class="wrapper">
+        <div class="app-container">
+          <!--------------------------------------------------- Sidebar sinistra -->
+          <div class="left-sidebar">
+            <!---------------------------------------------------- Header -->
+            <div class="header">
+              <img src="./assets/img/avatar_io.jpg" alt="user-avatar" />
+              <ul class="actions">
+                <li><i class="fa-solid fa-circle-notch"></i></li>
+                <li><i class="fa-solid fa-message"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              </ul>
             </div>
-
-            <!-- Sidebar 2 -->
-            <div class="sidebar sidebar-2">
-              <p>Sidebar 2 Content</p>
+            <!------------------------------------------------------- End Header -->
+            <!------------------------------------- Notifics -->
+            <div class="notifics">
+              <div class="bell">
+                <i class="fa-solid fa-bell-slash"></i>
+              </div>
+              <div class="notifics-text">
+                <h4>Ricevi notifiche di nuovi messaggi</h4>
+                <span>Attiva notifiche desktop</span>
+              </div>
             </div>
-
-            <!-- Sidebar 3 -->
-            <div class="sidebar sidebar-3">
-              <p>Sidebar 3 Content</p>
+            <!-----------------------------------------End Notifics ----->
+            <!-- Search-bar ---------------->
+            <div class="search-bar">
+              <div class="search-control">
+                <label for="search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Cerca o inizia una nuova chat"
+                />
+              </div>
             </div>
-
-            <!-- wsa-avatar -->
-            <div class="wsa-avatar">
-              <p>wsa-avatar</p>
-            </div>
+            <!------------------------------------------------- research of contacts-->
+            <!---------------------------------------- Contacts -->
+            <ul class="contacts">
+              <!---------------------------- Contact-list -->
+            </ul>
+            <!---End ---- Contacts -->
           </div>
-        </div>
-        <!-- wsa-container-header/main/footer -->
-        <div class="wsa-container">
-          <div class="right"> <!-- right -->
-            <!-- wsa-header -->
-          
-            <header class="wsa-header">
-            <p>wsa-header</p>
-          </header>
-
-          <!-- wsa-main -->
-          <main class="wsa-main">
-          <!-- class-chat -->
-            <div class="chat">
-            <div class="sent">ciao</div>
-              <!-- /.sent -->
-              <div class="received">ciao</div>
-              <!-- /.received -->
-      
+          <!-- End----- sidebar sx -->
+          <!-- Sidebar --- dx -->
+          <div class="right-sidebar">
+            <div class="header">
+              <!-- Info current chat -->
+              <div class="current-chat">
+                <img
+                  src="./assets/img/avatar_1.jpg"
+                  alt="current chat contact avatar"
+                />
+                <div class="contact-content">
+                  <h4 class="contact-name">Michele</h4>
+                  <span class="last-seen">Ultimo accesso oggi alle 16:26</span>
+                </div>
+              </div>
+              <!---------------------------------------- Info actions --------------------->
+              <ul class="actions">
+                <li><i class="fa-solid fa-search"></i></li>
+                <li><i class="fa-solid fa-paperclip"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              </ul>
             </div>
-            <!-- /.chat -->
-          </main>
-
-          <!-- wsa-footer -->
-          <footer class="wsa-footer">
-            <p>wsa-footer</p>
-          </footer>
+            <main>
+              <div class="chat-box">
+                <!----------------------------- Chat area ---------------------------->
+              </div>
+            </main>
+            <footer>
+              <div class="footer-box">
+                <i class="fa-regular fa-face-smile"></i>
+                <input type="text" placeholder="Scrivi un messaggio" />
+                <i class="fa-solid fa-microphone"></i>
+              </div>
+            </footer>
+          </div>
+          <!-- End ----- Sidebar dx -->
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
