@@ -1,37 +1,32 @@
-/* Stile predefinito per schermi desktop */
-body {
+* body {
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
-
+#backgrd .container {
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(from top, #b9b8b2, to bottom #757a7b);
+}
 .header {
   background-color: #075e54;
   height: 63px;
   position: relative;
-  width: 887px;
-}
-
-.wsa-main {
-  background-color: #6fdc41;
-  flex-grow: 3;
-  color: #fff;
-  max-width: 468px;
   width: 100%;
 }
-
 .main-container {
   display: flex;
-  background-color: rgba(219, 218, 210, 0.9);
   justify-content: center;
   position: absolute;
   top: 50px;
   bottom: auto;
-  width: 600px;
-  height: 300px;
+  width: ;
+  height: fit-content;
   margin: auto;
+  border: 2px dashed;
 }
-
+.left {
+}
 .sidebar {
   color: #fff;
   margin: auto 0;
@@ -57,28 +52,57 @@ body {
   padding: 20px;
   color: white;
 }
-
-.wsa-container {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
+.right {
 }
 
-.wsa-header {
-  background-color: #5e0747;
-  color: #fff;
+.wsa-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .wsa-main {
   background-color: #6fdc41;
   flex-grow: 3;
   color: #fff;
-  width: 100%; /* Imposta la larghezza di wsa-main al 100% */
+  max-width: 468px;
+  width: 100%;
+}
+.chat {
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 607px;
+  height: 397px;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
+#chat .sent {
+  background-color: #7bb7b0;
+  height: 85px;
+  position: relative;
+  width: 146px;
+  display: flex-end;
+}
+#chat .received {
+  background-color: #075e54;
+  height: 85px;
+  position: relative;
+  width: 146px;
+  display: flex-start;
+}
+
+.wsa-header,
 .wsa-footer {
-  background-color: #e8d01d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e0747;
   color: #fff;
+  height: 31px;
+  width: 721px;
 }
 
 /* Media query ----------------------------------- */
@@ -100,13 +124,27 @@ body {
   .wsa-avatar {
     margin-top: 0;
   }
+  .sent {
+    background-color: #7bb7b0;
+    height: 85px;
+    position: relative;
+    width: 146px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .received {
+    background-color: #075e54;
+    height: 85px;
+    position: relative;
+    width: 146px;
+  }
 }
 
 /* Media query per dispositivi mobili */
-@media (max-width: 1024px) {
+@media (min-width: 556px) {
   .main-container {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100vh;
     left: 10px;
     right: 10px;
   }
@@ -137,26 +175,35 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100px;
+    width: 62px;
+    height: 480px;
   }
-  .wsa-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
+}
+.wsa-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 400px;
+}
 
-  .wsa-header,
-  .wsa-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5e0747;
-    color: #fff;
-    height: 63px;
-    /* Altri stili per header e footer su dispositivi mobili */
-  }
+.wsa-header,
+.wsa-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5e0747;
+  color: #fff;
+  height: 60px;
+  /* Altri stili per header e footer su dispositivi mobili */
+}
+
+media (max-width: 768px) .wsa-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 84px;
+  height: 481px;
 }
