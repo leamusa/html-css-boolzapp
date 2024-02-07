@@ -20,8 +20,6 @@ img {
   max-width: 100%;
 }
 
-/* VIEWPORT SETTINGS */
-
 .wrapper {
   height: 100vh;
   background: linear-gradient(
@@ -32,14 +30,6 @@ img {
     #dbdad2 100%
   );
 }
-
-/* Debug */
-
-.app-container * {
-  /* border: 1px solid black; */
-}
-
-/* COMMON */
 
 i {
   cursor: pointer;
@@ -116,12 +106,12 @@ footer {
 
 /**************************************************************************************** Notifics***************************************************************************************/
 
-.left-sidebar .notification {
+.left-sidebar .notifics {
   display: flex;
   align-items: center;
   gap: 1rem;
   height: 10%;
-  background-color: #8fdafd;
+  background-color: #8edafc;
 }
 
 .notifics-text h4 {
@@ -134,10 +124,18 @@ footer {
 }
 
 .notifics .bell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
 .bell i {
-  color: #8fdafd;
+  color: #8edafc;
 }
 
 /**************************************************************************************** Search-bar ***************************************************************************************/
